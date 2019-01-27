@@ -1,0 +1,3 @@
+https://stackoverflow.com/questions/33127900/can-the-a-za-z-python-regex-pattern-be-made-to-match-and-replace-non-ascii-uni
+
+https://stackoverflow.com/questions/2294493/how-to-get-the-position-of-a-character-in-python

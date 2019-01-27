@@ -1,5 +1,10 @@
 Zebra|black and white
 Cheetah|The fastest animal
 Hippopotamus|In the mall bangkae
-Lion|King of the forest
 Elephant|Thailand symbols
+Snake|It has no leg but can move
+Parrot|It can speak
+Tiger|Angkor
+carNel|It has mountains on the back
+rabbit|It like carrot
+Turtle|Win the rabbit
