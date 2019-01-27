@@ -9,7 +9,7 @@ class hangman(object):
         self.hint = ''
         self.score = 0
         self.isOver = False
-        self.categories = ['animal'] # <== if you add new category, you shold add file name here
+        self.categories = ['animal', 'fruit', 'football-player'] # <== if you add new category, you shold add file name here
         self.catSelect = ''
     
     def reGame(self):
@@ -87,7 +87,6 @@ class hangman(object):
 
             if ''.join(hideWord) == self.word and wrongCount<=wrongLimit: # if win
                 isWin = True
-                self.score = 100 - (wrongCount*10)
             elif wrongCount<wrongLimit:
                 print('\n\t' + ' '.join(hideWord))
                 userGuess = input('\nGuess a Character > ')
@@ -102,6 +101,7 @@ class hangman(object):
                     wrongWord.append(userGuess)
                     wrongCount += 1
             
+        self.score = 0 if 100 - (wrongCount * 16) <= 0 else 100 - (wrongCount * 16.67)
         if isWin:
             self.reScreen()
             print(f'\nYou\'re win. This word is {self.word}')
@@ -109,11 +109,11 @@ class hangman(object):
             self.reScreen()
             print(f'\nOhh! You lose. This word is {self.word}. You can try agin:(')
 
-        print(f'Your Score is {self.score}')
+        print(f'Your Score is {self.score}/100')
 
         if input('\nDo you want to play again? [y/n] ').lower() == 'y':
             print('Waiting for new game...')
-            sleep(2)
+            sleep(1)
         else:
             self.gameOver()
             print('Waiting for end game...')
