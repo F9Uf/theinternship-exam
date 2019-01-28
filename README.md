@@ -6,6 +6,14 @@ This repo for The Internship Program Developer Exam.
 - [Hangman Game](/hangman)
 - [Weather](/weather)
 
+## Tool & Library :wrench:
+- **Python 3**
+- Library
+    - xml.etree.ElementTree
+    - json
+    - time
+    - random
+    
 ## About me :blush:
 - name :boy: : ` ขาญศักดิ์ แดงมณี ` 
 - email :envelope: : `atoseka@gmail.com`
