@@ -27,6 +27,9 @@ Wrong: [y]
 - Create words and hints separated by **'|'**
 - In **hangman.py** file, add **{categoryName}** in category list on **line 12**
 
+## Reference :books:
+- [Python Regex](https://stackoverflow.com/questions/33127900/can-the-a-za-z-python-regex-pattern-be-made-to-match-and-replace-non-ascii-uni)
+
 ## About me :blush:
 - name :boy: : ` ขาญศักดิ์ แดงมณี ` 
 - email :envelope: : `atoseka@gmail.com`

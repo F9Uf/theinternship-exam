@@ -5,7 +5,7 @@ def searchChild(root_node, json_tree):
     for child in root_node:
         json_tree[child.tag] = child.attrib
         if len(child) > 0:
-            searchChild(child, json_tree[child.tag])
+            searchChild(child, json_tree[child.tag]) # recursion
         elif len(child.attrib)== 0:
             json_tree[child.tag] = child.text
 
@@ -27,7 +27,7 @@ if __name__ == "__main__":
         while os.path.exists(f'{fileName}-{i}.json'):
             i += 1
         with open(f'{fileName}-{i}.json', 'w') as file:
-            json.dump(jsonDict, file, indent=4)
+            json.dump(jsonDict, file, indent=3)
             print(f'{fileName}-{i}.json was created!')
 
     else:
