@@ -61,7 +61,7 @@ class hangman(object):
                     # if it isn't correct input
                     print('Please enter correct input!!')
                     sleep(1)
-            except:
+            except ValueError:
                 print('Your input is Invalid!!')
                 self.gameOver()
 
@@ -126,7 +126,7 @@ class hangman(object):
                 data = list(map(lambda x: x.strip(), file.readlines())) 
                 # random word
                 self.word , self.hint = data[randint(0, len(data))].split('|')
-        except:
+        except IOError:
             print('Read file error!')
             self.gameOver()
     
