@@ -63,7 +63,8 @@ class hangman(object):
                     sleep(1)
             except ValueError:
                 print('Your input is Invalid!!')
-                self.gameOver()
+                sleep(1)
+                # self.gameOver()
 
         print('End Program..')
 
@@ -101,7 +102,7 @@ class hangman(object):
                     wrongWord.append(userGuess)
                     wrongCount += 1
             
-        self.score = 0 if 100 - (wrongCount * 16) <= 0 else 100 - (wrongCount * 16.67)
+        self.score = 0 if 100 - (wrongCount * 16.7) <= 0 else float(100 - (wrongCount * 16.7))
         if isWin:
             self.reScreen()
             print(f'\nYou\'re win. This word is {self.word}')
